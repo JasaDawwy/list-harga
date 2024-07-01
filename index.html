@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,60 @@
     body {
         text-align: center;
         font-family: Monaco, monospace;
-        background: linear-gradient(90deg, #00041a, #081818, #00041a);
+        background: linear-gradient(90deg, #00041a, #081818, #00041a, #0a061b, #08180d);
+        background-size: 400% 400%;
         color: #fff;
         padding-bottom: 40px;
         position: relative;
         min-height: 100vh;
         margin: 0;
+        animation: gradientAnimation 10s ease infinite;
+    }
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
     h2 {
-        text-shadow: 0 0 5px #bf00ff, 0 0 10px #bf00ff, 0 0 15px #bf00ff, 0 0 20px #bf00ff, 0 0 25px #bf00ff;
+        text-shadow: 0 0 10px #bf00ff, 0 0 20px #bf00ff, 0 0 30px #bf00ff, 0 0 40px #bf00ff, 0 0 50px #bf00ff;
+        animation: neonGlow 10s ease-in-out infinite;
+    }
+    @keyframes neonGlow {
+        0% {
+            text-shadow: 0 0 10px #bf00ff, 0 0 20px #bf00ff, 0 0 30px #ff00d4, 0 0 40px #ff00d4, 0 0 50px #ff00d4;
+            color: #f0c2ff;
+        }
+        25% {
+            text-shadow: 0 0 10px #ff00d4, 0 0 20px #ff00d4, 0 0 30px #ffae00, 0 0 40px #ffae00, 0 0 50px #ffae00;
+            color: #ffb6f3;
+        }
+        50% {
+            text-shadow: 0 0 10px #ffae00, 0 0 20px #ffae00, 0 0 30px #00ffd2, 0 0 40px #00ffd2, 0 0 50px #00ffd2;
+            color: #ffeeca;
+        }
+        75% {
+            text-shadow: 0 0 10px #00ffd2, 0 0 20px #00ffd2, 0 0 30px #bf00ff, 0 0 40px #bf00ff, 0 0 50px #bf00ff;
+            color: #c8fff5;
+        }
+        100% {
+            text-shadow: 0 0 10px #bf00ff, 0 0 20px #bf00ff, 0 0 30px #ff00d4, 0 0 40px #ff00d4, 0 0 50px #ff00d4;
+            color: #f1c6ff;
+        }
     }
     table {
         width: 80%;
         margin: 0 auto;
         border-collapse: collapse;
-        background-color: #040c0c;
-        border: 2px solid hsl(170, 34%, 31%);
+        background-color: #040c0c00;
+        border: 2px solid hsl(180, 39%, 28%);
     }
     th, td {
-        border: 1px solid hsl(170, 34%, 31%);
+        border: 1px solid hsl(180, 39%, 28%);
         padding: 8px;
         text-align: left;
     }
     th {
-        background-color: #18312f;
+        background-color: #18312f7c;
     }
     .contact-links {
         text-align: center;
@@ -43,10 +73,10 @@
         text-decoration: none;
         margin: 5px;
         color: #fff;
-        transition: text-shadow 0.3s ease;
+        transition: text-shadow 0.3s ease, transform 0.3s ease;
     }
     .contact-link:hover {
-        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff00d4, 0 0 15px #ffae00, 0 0 20px #d400ff, 0 0 25px #ff0062; /* Neon glow effect */
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff008c, 0 0 15px #8c00ff, 0 0 20px #d400ff, 0 0 25px #ff00ff;
     }
     .instagram-logo, .whatsapp-logo, .discord-logo {
         width: 1em;
@@ -114,7 +144,7 @@
     <p></p>
     <a class="contact-link" href="https://wa.me/6281333866874"><img class="whatsapp-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/20px-WhatsApp.svg.png" alt="WhatsApp Logo"> Whatsapp</a>
     <p></p>
-    <a class="contact-link" href="https://discord.com/invite/hnd4ebv2"><img class="discord-logo" src="discord-logo.png"> Discord</a>
+    <a class="contact-link" href="https://discord.com/invite/hnd4ebv2"><img class="discord-logo" src="C:\Users\miche\Downloads\discord-logo.png"> Discord</a>
     <p></p>
     <p>Pembayaran melalui:</p>
     <ul class="payment-methods" style="list-style-type: none; padding: 0;">
@@ -130,7 +160,7 @@
 <p style="font-family: 'Courier'; font-size: 15px; color: #fff; margin-top: 20px; margin-bottom: 9px; padding: 0 20px;">
     <span style="margin-right: 5px;">PENTING:</span><br>
     <span style="margin-right: 5px;">Sebelum memesan jasa ketik maksimal 2-3 hari sebelum hari pengumpulan. JIKA MENDADAK TIDAK DITERIMA.</span><br>
-    <span style="display: block; margin-top: 17px;">Jam kerja mulai 06.00am s.d 21.00pm</span>
+    <span style="display: block; margin-top: 17px;">Jam kerja mulai 06.00 s.d 21.00 WIB</span>
 </p>
 
 <footer>
